@@ -2,12 +2,13 @@ const { isValidYYYYMMDD } = require('../utils/util');
 const Booking = require('../models/booking');
 const Property = require('../models/property');
 const Cleaning = require('../models/cleaning');
+const {BadRequestError} = require('../exceptions/error');
 
 class CleaningService {
     static async getListCleaning(date) {
         // if format correct
         if (!isValidYYYYMMDD(date)) {
-            throw new Error('Date is not in the format YYYY-MM-DD');
+            throw new BadRequestError('Date is not in the format YYYY-MM-DD');
         }
         let cleanings = [];
         const properties = await Property.get_all();

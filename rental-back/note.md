@@ -18,11 +18,11 @@ npm install nodemon
 
 - Apply status code correctly
     - error handling
+- How to write the documentation correctly
+- Speach: vocabulary, 1 a 2 a 5 minute of presenting yourself
 - Make a test in Node / Bruno
     - unit test
-- How to write the documentation correctly
 - React
-- Speach: vocabulary, 1 a 2 a 5 minute of presenting yourself
 
 
 Priority 2: rehearse the things they are likely to care about
