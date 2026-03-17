@@ -5,16 +5,57 @@ meta {
 }
 
 get {
-  url: {{url}}/cleaning?date=2026-20-3
-  body: none
+  url: {{url}}/cleaning?date=2026-43-18
+  body: json
   auth: inherit
 }
 
 params:query {
-  date: 2026-20-3
+  date: 2026-43-18
+}
+
+tests {
+  let date = new Date(req.url.split("=")[1]);
+    console.log(isNaN(date));
+  if(isNaN(date)) {
+  expect(res.status).to.equal(400);
+  expect(res.body.error).to.equal(400);
+  expect(res.body.message).to.include('Date is not in the format YYYY-MM-DD');
+  }
+    
 }
 
 settings {
   encodeUrl: true
   timeout: 0
+}
+
+docs {
+   GET /cleaning-tasks?date=YYYY-MM-DD
+   
+   Returns the cleaning tasks that must be scheduled for the provided date.
+   
+  ### Query Parameters
+  - `date` (required): ISO date in `YYYY-MM-DD` format
+  
+  ### Success Response
+  Returns a JSON array of cleaning tasks.
+  Example:
+  ```json
+  [
+    {
+      "property_id": "P1",
+      "checkout_booking_id": "B1",
+      "checkout_date": "2026-03-18",
+      "next_booking_id": "B2",
+      "next_checkin_date": "2026-03-20",
+      "conflict": false
+    }
+  ]
+  ```
+  
+  ### Validation / Error Response
+  Return 400 Bad Request if:
+  date is missing
+  date is not a valid YYYY-MM-DD date
 }

@@ -1,6 +1,18 @@
 npm init
 npm install express
 npm install nodemon
+npm install --save-dev jest
+
+pytest
+pydantic 
+python-dotenv
+passlib[bcrypt]
+pymongo
+python-multipart
+uvicorn
+fastapi
+httpx
+pydantic[email]
 
 # To do
 
@@ -13,6 +25,10 @@ npm install nodemon
 
 ## Create structure framework as quick as possible
 
+## Make unit test
+la syntaxe sync : expect(() => fn()).toThrow(...)
+avec la syntaxe async : await expect(promise).rejects.toThrow(...)
+
 ## Write the documentation correctly
 
 
@@ -20,7 +36,7 @@ npm install nodemon
     - error handling
 - How to write the documentation correctly
 - Speach: vocabulary, 1 a 2 a 5 minute of presenting yourself
-- Make a test in Node / Bruno
+- Make a test in Node FastApi / Bruno
     - unit test
 - React
 

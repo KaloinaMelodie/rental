@@ -90,6 +90,13 @@ Example invalid request:
 ```bash
 curl "http://127.0.0.1:8000/cleaning-tasks?date=invalid-date"
 ```
+run 
+``` npm test 
+```
+
+```
+pytest tests/test_user_service.py -v
+```
 
 ## What I Would Improve With More Time
 - add more unit tests for edge cases
