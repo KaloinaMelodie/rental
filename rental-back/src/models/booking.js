@@ -28,7 +28,7 @@ class Booking {
     }
 
     static async get_by_property_id(id){
-        const bookings = await get_all();
+        const bookings = await this.get_all();                
         return bookings.filter(booking => booking.property_id == id);
     }
 }

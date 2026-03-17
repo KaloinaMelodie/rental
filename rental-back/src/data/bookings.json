@@ -1,4 +1,4 @@
-    [
+[
   {
     "id": "B1",
     "property_id": "P1",
@@ -60,6 +60,97 @@
     "property_id": "P5",
     "check_in": "2026-03-10",
     "check_out": "2026-03-18",
+    "status": "confirmed"
+  },
+  {
+    "id": "B10",
+    "property_id": "P6",
+    "check_in": "2026-03-12",
+    "check_out": "2026-03-18",
+    "status": "confirmed"
+  },
+  {
+    "id": "B11",
+    "property_id": "P6",
+    "check_in": "2026-03-25",
+    "check_out": "2026-03-28",
+    "status": "confirmed"
+  },
+  {
+    "id": "B12",
+    "property_id": "P6",
+    "check_in": "2026-03-29",
+    "check_out": "2026-04-02",
+    "status": "confirmed"
+  },
+  {
+    "id": "B13",
+    "property_id": "P7",
+    "check_in": "2026-03-11",
+    "check_out": "2026-03-18",
+    "status": "confirmed"
+  },
+  {
+    "id": "B14",
+    "property_id": "P7",
+    "check_in": "2026-03-18",
+    "check_out": "2026-03-20",
+    "status": "cancelled"
+  },
+  {
+    "id": "B15",
+    "property_id": "P7",
+    "check_in": "2026-03-21",
+    "check_out": "2026-03-24",
+    "status": "confirmed"
+  },
+  {
+    "id": "B16",
+    "property_id": "P8",
+    "check_in": "2026-03-13",
+    "check_out": "2026-03-18",
+    "status": "confirmed"
+  },
+  {
+    "id": "B17",
+    "property_id": "P8",
+    "check_in": "2026-03-16",
+    "check_out": "2026-03-18",
+    "status": "checked_in"
+  },
+  {
+    "id": "B18",
+    "property_id": "P8",
+    "check_in": "2026-03-19",
+    "check_out": "2026-03-21",
+    "status": "confirmed"
+  },
+  {
+    "id": "B19",
+    "property_id": "P9",
+    "check_in": "2026-03-18",
+    "check_out": "2026-03-22",
+    "status": "confirmed"
+  },
+  {
+    "id": "B20",
+    "property_id": "P10",
+    "check_in": "2026-03-09",
+    "check_out": "2026-03-18",
+    "status": "confirmed"
+  },
+  {
+    "id": "B21",
+    "property_id": "P10",
+    "check_in": "2026-03-18",
+    "check_out": "2026-03-19",
+    "status": "confirmed"
+  },
+  {
+    "id": "B22",
+    "property_id": "P10",
+    "check_in": "2026-03-19",
+    "check_out": "2026-03-22",
     "status": "confirmed"
   }
 ]
