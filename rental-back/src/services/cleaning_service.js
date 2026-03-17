@@ -10,9 +10,10 @@ class CleaningService {
         // }
         let cleanings = [];
         const request_date = new Date(date);
-        const properties = Property.get_all();
+        const properties = await Property.get_all();
         console.log(properties);
-        properties.foreach(async (property) => {
+        // properties.foreach(async (property) => {
+        for (const property of properties) {
             const cleaning = new Cleaning();
             const bookings = await Booking.get_by_property_id(property.property_id);
             const valid_checkout_bookings = bookings.filter(booking => (new Date(booking.check_out) == request_date) && (booking.status == "confirmed" || booking.status == "checked_in") && booking_status != "cancelled");
@@ -36,7 +37,8 @@ class CleaningService {
                 cleanings.push(cleaning);
             }
 
-        });
+        }
+        // });
         return cleanings;
     }
 }
