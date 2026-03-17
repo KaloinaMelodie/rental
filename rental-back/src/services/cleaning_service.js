@@ -1,6 +1,7 @@
 const { isValidYYYYMMDD } = require('../utils/util');
 const Booking = require('../models/booking');
 const Property = require('../models/property');
+const Cleaning = require('../models/cleaning');
 
 class CleaningService {
     static async getListCleaning(date) {
@@ -11,7 +12,6 @@ class CleaningService {
         let cleanings = [];
         const request_date = new Date(date);
         const properties = await Property.get_all();
-        console.log(properties);
         // properties.foreach(async (property) => {
         for (const property of properties) {
             const cleaning = new Cleaning();
