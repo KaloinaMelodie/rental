@@ -97,3 +97,6 @@ curl "http://127.0.0.1:8000/cleaning-tasks?date=invalid-date"
 - add structured logging
 - improve input validation and error responses
 - expose conflict details for easier debugging
+
+## Notes
+Optional section for anything important the reviewer should know.
