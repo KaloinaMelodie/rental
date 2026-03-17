@@ -1,0 +1,65 @@
+    [
+  {
+    "id": "B1",
+    "property_id": "P1",
+    "check_in": "2026-03-15",
+    "check_out": "2026-03-18",
+    "status": "confirmed"
+  },
+  {
+    "id": "B2",
+    "property_id": "P1",
+    "check_in": "2026-03-20",
+    "check_out": "2026-03-23",
+    "status": "confirmed"
+  },
+  {
+    "id": "B3",
+    "property_id": "P2",
+    "check_in": "2026-03-16",
+    "check_out": "2026-03-18",
+    "status": "cancelled"
+  },
+  {
+    "id": "B4",
+    "property_id": "P2",
+    "check_in": "2026-03-19",
+    "check_out": "2026-03-22",
+    "status": "confirmed"
+  },
+  {
+    "id": "B5",
+    "property_id": "P3",
+    "check_in": "2026-03-17",
+    "check_out": "2026-03-18",
+    "status": "checked_in"
+  },
+  {
+    "id": "B6",
+    "property_id": "P3",
+    "check_in": "2026-03-18",
+    "check_out": "2026-03-21",
+    "status": "confirmed"
+  },
+  {
+    "id": "B7",
+    "property_id": "P4",
+    "check_in": "2026-03-14",
+    "check_out": "2026-03-18",
+    "status": "confirmed"
+  },
+  {
+    "id": "B8",
+    "property_id": "P4",
+    "check_in": "2026-03-17",
+    "check_out": "2026-03-19",
+    "status": "confirmed"
+  },
+  {
+    "id": "B9",
+    "property_id": "P5",
+    "check_in": "2026-03-10",
+    "check_out": "2026-03-18",
+    "status": "confirmed"
+  }
+]
